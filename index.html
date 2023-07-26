@@ -3,17 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit  burst</title>
+     <!-- tailwind and daisy ui-->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!--font awesome-->
+     <script src="https://kit.fontawesome.com/2f68963209.js" crossorigin="anonymous"></script>
+     <!--google font-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
 </head>
 <body>
     <header>
+        <!---header nav bar-->
+        <div class=" container md:container md:mx-auto mt-8 text-white bg-red-400 rounded-lg navbar bg-base-100">
+            <div class="navbar-start">
+             
+              <ul class="menu  menu-horizontal px-1">
+                <li><a>Home</a></li>
+               
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+              
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <img src="images/logo.png" alt="">
+                <a class=" normal-case text-xl">Fruit Burst</a> 
+            </div>
+            <div class="navbar-end">
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                <i class="fa-solid fa-magnifying-glass text-slate-400 -mx-7" ></i>
 
+            </div>
+          </div>
     </header>
     <main>
+        <!---carsul section-->
+        <div class="carousel w-full mt-10">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="/images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="/images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="/images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="/images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
 
     </main>
     <footer>
-        
+
     </footer>
     
 </body>
