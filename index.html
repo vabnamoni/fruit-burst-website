@@ -11,13 +11,18 @@
      <script src="https://kit.fontawesome.com/2f68963209.js" crossorigin="anonymous"></script>
      <!--google font-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-<style>
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+     <style>
+     *{
+        margin:0;
+        padding:0;
+     }
     .font-lato{
         font-family: 'Lato', sans-serif;
     }
 </style>
+
 </head>
 <body>
     <header>
@@ -48,11 +53,18 @@
     <main>
         <!---carsul section-->
         <div class="carousel w-full mt-10">
-            <div id="slide1" class="carousel-item relative w-full">
-              <img src="/images/banner1.png" class="w-full" />
+            <div id="slide1" class="carousel-item relative w-full bg-black-400">
+              <img src="/images/banner1.png" class="w-full " />
+             
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                
+               
                 <a href="#slide4" class="btn btn-circle">❮</a> 
+                
+                <h1 class="text-white text-6xl font-light font extrablod text-center">Exotic tastes at your <br> doorstep</h1>
+                
                 <a href="#slide2" class="btn btn-circle">❯</a>
+                
               </div>
             </div> 
             <div id="slide2" class="carousel-item relative w-full">
